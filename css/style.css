@@ -1,0 +1,407 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+.mainbg {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../img/mainbg.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	height: 500px;
+	flex-direction: column;
+}
+.page-title {
+	color:white;
+	font-size: 48px;
+}
+.page-title2 {
+	color:white;
+	font-size: 36px;
+}
+.logo {
+	width: 210px;
+	margin-top: 14px;
+}
+.page-header {
+	display: flex;
+	height: 80px;
+	justify-content: space-between;
+}
+.main-nav {
+	display: flex;
+	font-size: 21px;
+	text-transform: uppercase;
+	margin-top: 24px;
+	list-style: none;
+	margin-left: 36px;
+	color: black;
+}
+.main-nav li {
+	margin-left: 36px;
+}
+.main-nav a {
+	color: #432;
+	text-decoration: none;
+}
+.wrapper {
+	margin: 0 auto;
+	padding-left: 60px;
+	padding-right: 60px;
+	border-width: thin;
+	border-style: solid;
+	border-color: #efefef;
+}
+.about {
+	text-align: center;
+}
+.yellow-string {
+	margin-top: 120px;
+	color: #ffd61a;
+	font-size: 24px;
+}
+.p-24 {
+	margin-top: 24px;
+}
+.p-32 {
+	margin-top: 32px;
+}
+.p-40 {
+	margin-top: 40px;
+}
+.p-64 {
+	margin-top: 64px;
+}
+.p-80 {
+	margin-top: 80px;
+}
+.four-picture {
+	margin-top: 80px;
+	display: flex;
+	width: 100vw;
+	height: 200px;
+	overflow: hidden;
+}
+.four-picture .img1 {
+	width: auto;
+	height: 100%;
+	animation: slide1 60s -30s linear infinite;
+}
+.four-picture .img2 {
+	width: auto;
+	height: 100%;
+	animation: slide2 60s linear infinite;
+}
+@keyframes slide1 {
+	0% {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+@keyframes slide2 {
+	0% {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-200%);
+	}
+}
+.four-picture ul {
+	display: flex;
+}
+.course {
+	text-align: center;
+	margin-bottom: 64px;
+}
+.black-string {
+	margin-top: 64px;
+	color: #222222;
+	font-size: 24px;
+}
+.course2 {
+	display: flex;
+}
+.course_img {
+	width: 50%;
+}
+.course_img img {
+	vertical-align: top;
+	width: 100%;
+	height: 100%;
+}
+.course-string {
+	color: #222222;
+	font-size: 24px;
+}
+.course-string2 {
+	color: #222222;
+	margin-top: 40px;
+}
+.back-gry {
+	background-color:whitesmoke;
+	padding-left: 48px;
+	display: flex;
+	justify-content: center;
+    flex-direction: column;
+	width: 50%;
+}
+.news {
+	text-align: center;
+}
+.news2 {
+	display: flex;
+	margin-top: 64px;
+	justify-content: center;
+    align-items: baseline;
+}
+.news2_chld {
+	width: 23%;
+}
+.news2_chld_center {
+	width: 23%;
+	margin-left: 32px;
+	margin-right: 32px;
+}
+.news2 img {
+	width: 100%;
+	height: 60%;
+	margin-bottom: 32px;
+}
+.more_btn {
+	text-align: center;
+	margin-top: 56px;
+	margin-bottom: 48px;
+}
+.more_btn button {
+	appearance: none;
+	font-size: 21px;
+	background-color: gold;
+	color: whitesmoke;
+	border: 0;
+	width: 300px;
+	height: 60px;
+}
+button:hover {
+	background-color: orange;
+}
+.access {
+	margin-top: 64px;
+	text-align: center;
+	background-color: #fafafa;
+}
+.access h4 {
+	margin-bottom: 24px;
+	font-size: 24px;
+}
+.pb-64 {
+	margin-bottom: 64px;
+}
+.access2 {
+	display: flex;
+	justify-content: center;
+	margin-top: 64px;
+}
+.access2 .komoku {
+	text-align: left;
+	margin-left: 192px;
+}
+.access2 .meisai {
+	text-align: left;
+	padding-left: 48px;
+}
+.pb-2480 {
+	margin-top: 24px;
+	margin-bottom: 80px;
+}
+.contact {
+	margin-top: 48px;
+	text-align: center;
+}
+.contact h4 {
+	margin-bottom: 24px;
+	font-size: 24px;
+}
+.contact2 {
+	text-align: center;
+	margin-top: 80px;
+}
+.t-box1 {
+	width: 328px;
+	height: 36px;
+	margin-left: 120px;
+	border: 2px solid #bfbfbf;
+}
+.t-box2 {
+	width: 328px;
+	height: 36px;
+	margin-left: 120px;
+	border: 2px solid #bfbfbf;
+}
+.contact2 .lab {
+	display: inline-block;
+	width: 112px;
+	text-align: left;
+}
+.contact2 .lab0 {
+	display: inline-block;
+	width: 300px;
+	text-align: center;
+	margin-left: 10px;
+}
+.contact4 {
+	margin-top: 32px;
+	margin-bottom: 40px;
+}
+.contact4 label {
+	display: inline-block;
+	width: 112px;
+	text-align: left;
+}
+.contact4 .t-area {
+	display: inline-block;
+	vertical-align: top;
+	width: 328px;
+	height: 108px;
+	resize: none;
+	margin-left: 120px;
+	border: 2px solid #bfbfbf;
+}
+.send_btn {
+	text-align: center;
+	margin-bottom: 80px;
+}
+.send_btn button {
+	appearance: none;
+	font-size: 18px;
+	background-color: gold;
+	color: whitesmoke;
+	border: 0;
+	width: 298px;
+	height: 54px;
+}
+.top_btn {
+	text-align: right;
+	margin-right: 80px;
+}
+.top_btn button {
+	appearance: none;
+	font-size: 18px;
+	background-color: #707070;
+	color: white;
+	border: 0;
+	width: 80px;
+	height: 54px;
+}
+footer {
+  	width: 100%;
+  	height: 90px; 
+  	text-align: center;
+  	padding: 32px 0 32px;
+  	background-color: #707070;
+    font-size: 18px;
+  	color: white;
+}
+.contactX {
+	margin-top: 40px;
+	margin-left: 126px;
+}
+/* 元々のチェックボックス（非表示） */
+.contactX input[type="checkbox"]{
+    display: none;
+}
+/* チェックボックスの代わりを成すラベル */
+.contactX input[type="checkbox"]+label{
+    display: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+	text-align: left;
+	width: 450px;
+	margin-left: 176px;
+	padding-left: 60px;
+}
+/* ラベルの左に表示させる正方形のボックス□ */
+.contactX input[type="checkbox"]+label::before{
+    content: ""; /* ボックスのコンテンツ */
+    position: absolute; /*ボックスの位置を指定する */
+    display: block; /* ブロックレベル要素化する */
+    box-sizing: border-box;
+    width: 20px; /* ボックスの横幅を指定する */
+    height: 20px; /* ボックスの高さを指定する */
+	margin-top: -10px; /* チェック枠の位置 */
+    left: 0; /* 左から配置の基準位置を決める */
+    top: 50%; /* 上部から配置の基準位置を決める */
+    border: 1px solid;/* ボックスの境界線を実線で指定する */
+    border-color:  #f0ebe5; /* 枠の色変更 お好きな色を */
+    background-color: #f0ebe5; /* 背景の色変更 お好きな色を */
+	border-radius: 6px; /* ボックスの角丸を指定する */
+}
+/* チェックが入った時のレ点 */
+.contactX input[type="checkbox"]:checked+label::after{
+    content: "";
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    width: 18px;
+    height: 9px;
+    margin-top: -9px;
+    top: 50%;
+    left: 3px;
+    transform: rotate(-45deg);
+    border-bottom: 3px solid;
+    border-left: 3px solid;
+    border-color:  #585753; /* チェックの色変更 お好きな色を */
+}
+.pl-24 {
+	margin-top: 24px;
+	margin-left: 68px;
+}
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
